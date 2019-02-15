@@ -11,4 +11,4 @@ EXPOSE     9090
 VOLUME     [ "/gitlab-runner" ]
 WORKDIR    /gitlab-runner
 ENTRYPOINT [ "/usr/sbin/gitlab-runner" ]
-CMD        ["run", "--working-directory=/home/gitlab-runner"]
+CMD        ["run", "--working-directory=/gitlab-runner"]
