@@ -4,6 +4,7 @@ LABEL maintainer="MTD"
 RUN wget -O /usr/sbin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64 && \
     chmod +x /usr/sbin/gitlab-runner
 RUN mkdir -p /gitlab-runner && \
+    chmod 0770 /gitlab-runneri && \
     chown -R nobody:root /gitlab-runner
 
 USER       nobody
